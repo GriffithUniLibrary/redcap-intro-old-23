@@ -1,38 +1,47 @@
 ---
 nav_order: 2
-topics: GitHub; REDCap; LimeSurvey; Griffith; Research
-title: Introduction
+topics: Accessing REDCap; Logging in; Navigation
+title: Logging in
 ---
 
-{% capture basics %}
-**Note:** The aim of this workshop is to get you up and running with REDCap quickly. We aim to cover the fundamentals well enough that you can start to use the service.
+## Finding REDCap and logging in
 
-For this reason we've left out advanced topics like scheduled invitations, randomisation and longitudinal study design.
+The Griffith REDCap instance is hosted at [www151.griffith.edu.au/redcap/](https://www151.griffith.edu.au/redcap/). You can also get information about REDCap and Lime Survey (Griffith's other supported survey solution) via the Library's [Working with Data](https://www.griffith.edu.au/library/research-publishing/working-with-data/create-and-capture) page.
+
+Your REDCap accoutn is connected to the Griffith phonebook. Your Griffith s-number and password allow you to enter. There is no need to maintain separate login details.
+
+{% capture logoutwarning %}
+**Note:** You'll be logged out if you are inactive for more than a certain period.
+{% endcapture %}
+{% include alert.html text=logoutwarning color="warning" %}
+
+{% capture loginactivity %}
+
+1. Open a browser and paste `https://www151.griffith.edu.au/redcap/` into the address bar.
+2. Log in to REDCap using your s-number and password.
+3. The first screen you will be shown is the `My Projects` screen.
+
 {% endcapture %}
 
-{% include alert.html text=basics align="left" color="warning" %}
+{% include accordion.html title1="Activity: Log in to REDCap" text1=loginactivity open=true %} 
 
-## Topic and aims
+## The My Projects Screen
 
-Introduction to REDCap (REsearch Data Capture)
+The `My Projects` screen shows any projects you are working on or have access to.
 
-## Audience
+{% include figure.html img="my-projects.png" alt="Alt text" caption="REDCap Projects Screen" width="100" %}
 
-This workshop is aimed at researchers and academics in the field of biostatistics, or anyone seeking to get up and running with the REDCap data collection tool. 
+## Home Menu
 
-## Learning objectives
-
-{% capture learningobjectives %}
-
-| Once you have completed this workshop you should be able to: |
+| Item | What is does |
 | -----|
-| Explain the difference between copyright and academic integrity  |
-| Identify the most common sources of GLAM archival text  |
-| Verb a noun with the following limiting words  |
+| My Projects | The page you are looking at |
+| New Project | Creates a new project |
+| Help & FAQ | REDCap has an extensive, searchable help section built in. We encourage you to use it frequently |
+| Send-It | Send-It is a secure file transfer application for sending recipients files up to 35 MB in size. We won’t be looking at it in this session |
+| Messenger | REDCap includes a feature that allows you to send messages to your project collaborators within the web app. This could be useful where you want to keep conversations about your project in the same place as the project itself. We won’t be looking at it in this session |
+| My Profile | You can set preferences relating to name, email address and regional number formats here |
 {:.table}
-
-{% endcapture %}
-{% include card.html header="Learning outcomes" text=learningobjectives %}
 
 ## Prerequisites
 

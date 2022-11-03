@@ -17,7 +17,7 @@ Introduction to REDCap (REsearch Data Capture)
 
 ## Audience
 
-This workshop is aimed at researchers and academics in the field of biostatistics, or anyone seeking to get up and running with the REDCap data collection tool. 
+This workshop is aimed at researchers and academics in the field of biostatistics, or anyone seeking to get up and running with the REDCap data collection tool.
 
 ## Learning objectives
 
