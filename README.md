@@ -25,13 +25,11 @@ This workshop is aimed at researchers and academics in the field of biostatistic
 To successfully coplete this workshop you will need: 
 
 - A modern browser
-- An installation of [OpenRefine](https://openrefine.org)
 
 ## Assumed knowledge
 
 It is assumed that you have the following level of understanding:
 
-- Ability to install software on your own device
 - Foundational data terminology such as tabular data, binary data, csv, tables, fields etc.
 
 {% endcapture %}

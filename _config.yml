@@ -11,16 +11,16 @@
 # SITE SETTINGS
 #
 # title appears in the header
-title: Long Lesson Template
+title: Introduction to REDCap
 # title-icon appears in the header to give some pizazz (leave blank for none)
 # choose from Bootstrap Icons in _includes/bootstrap-icons
 # find names on https://icons.getbootstrap.com/ (or look in "_includes/bootstrap-icons")
 # some options: code-slash file-code gear tools lightblub book bookmark-star
-title-icon: book
+title-icon: input-cursor
 # description appears in sidebar footer
-description: "A template for longer lessons with more than 5 sections"
+description: "An introduction to REDCap (REsearch Data Capture) tool at Griffith University."
 # keywords for meta tags used by search engines
-keywords: "workshops, websites, gh-pages, jekyll"
+keywords: "workshop, redcap, biostatistics, bioinformatics, survey, research, university"
 # image for meta tags, will appear when sharing link on social media
 featured-image: "/images/university-drive.jpg"
 

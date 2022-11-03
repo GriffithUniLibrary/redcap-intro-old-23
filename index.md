@@ -7,11 +7,13 @@ A minimal Jekyll theme with sidebar content nav for creating lesson and workshop
 
 {% include figure.html img="university-drive.jpg" alt="University Drive, Southport" caption="University Drive, Southport" width="75%" %}
 
-*Add your workshop abstract here!*
+{% include figure.html img="redcap-logo-full.png" alt="REDCap full logo" caption="REDCap logo" width="75%" %}
 
-Learn how to create a super quick easy website for a workshop by writing a few markdown files! 
-Host it for free on GitHub with gh-pages, and share!
-Fun!
+{% capture workshopinfo %}
+This site is designed as a companion to [Griffith Library's](https://www.griffith.edu.au/library) Research Data Capture workshops, presented in collaboration with Griffith [RED](https://www.griffith.edu.au/research/research-services/researcher-education-development). It can also be treated as a standalone, self-paced tutorial.
+{% endcapture %}
+
+{% include alert.html text=workshopinfo align="left" color="info" %}
 
 {% include toc.html %}
 

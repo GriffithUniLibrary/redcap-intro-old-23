@@ -1,6 +1,5 @@
 ---
-section_id: Create Content
-nav_order: 3
+nav_order: 
 title: Page Set Up
 topics: Front Matter; Navigation
 ---
