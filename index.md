@@ -1,11 +1,7 @@
 ---
-title: Griffith Library Workshop Template
+title: Introduction to REDCap at Griffith
 layout: lesson-content
 ---
-
-A minimal Jekyll theme with sidebar content nav for creating lesson and workshop websites using Markdown.
-
-{% include figure.html img="university-drive.jpg" alt="University Drive, Southport" caption="University Drive, Southport" width="75%" %}
 
 {% include figure.html img="redcap-logo-full.png" alt="REDCap full logo" caption="REDCap logo" width="75%" %}
 
@@ -16,8 +12,6 @@ This site is designed as a companion to [Griffith Library's](https://www.griffit
 {% include alert.html text=workshopinfo align="left" color="info" %}
 
 {% include toc.html %}
-
-{% include template/credits.html %}
 
 ## Topic and aims
 
@@ -64,3 +58,5 @@ This workshop is aimed at researchers and academics in the field of biostatistic
 
 {% endcapture %}
 {% include card.html header="Assumed knowledge" text=assumedknowledge %}
+
+{% include template/credits.html %}
