@@ -1,6 +1,6 @@
 ---
 nav_order: 8
-title: Branching
+title: Data dictionaries
 topics: Survey structure; Data dictionary; 
 description: REDCap can export and import the data structure for your project into a CSV-formatted file called a data dictionary.
 ---
@@ -16,10 +16,12 @@ A data dictionary is helpful for saving the design of your survey, or alternativ
 5. In a new line, enter the following
     `Variable: prize; Form Name: prize_draw; Field Type: radio; Field Label: What reward would you like?; Choices: 1, Gift card | 2, Chocolates | 3, Movie tickets.`
 6. Save the file (in CSV format, if prompted by Excel).
-{% endcapture %}
-{% include card.html header="Export and edit a data dictionary" text=exportdict %}
-
 {% include figure.html img="csv-newline.png" alt="Spreadsheet containing redcap data" caption="Adding a new line to a data dictionary" width="100" %}
+{% endcapture %}
+
+{% include accordion.html title1="Activity: Export and edit a data dictionary (click to expand)" text1=exportdict open=false %}
+
+Once you've edited yor data dictionary, you can upload it with the changes you've made and they will be added to the instruments in your project. You can even add new instruments this way!
 
 {% capture uploaddict %}
 7. In the `Data Dictionary` tab, click `Upload a Data Dictionary`.
