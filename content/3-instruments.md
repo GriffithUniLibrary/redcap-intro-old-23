@@ -38,7 +38,6 @@ Now We’ll build a form and then turn it into a survey.
 8. Click `Save`.
 9. Repeat the process to add the field Given Name (name_given)
 {% endcapture %}
-{% include accordion.html title1="Add a basic text field" text1=buildform open=false %} 
 
 {% capture multiplechoice %}
 1. Click `Add field`.
@@ -50,35 +49,12 @@ Now We’ll build a form and then turn it into a survey.
 {% include alert.html text="Note here that the ‘raw value’, which appears before the column, is the value that gets recorded to your data. Thus your recorded value can be numeric, or a single letter code, while the participant can read a fuller description." color="info" %}
 
 {% endcapture %}
-{% include accordion.html title1="Add a multiple choice question" text1=multiplechoice open=false %} 
+
+{% include accordion.html title1="Activity: Add a basic text field" title2="Activity: Add a multiple choice question" text1=buildform text2=multiplechoice open=false %}
+
+<!-- {% include accordion.html title1="Add a multiple choice question" text1=multiplechoice open=false %} -->
 
 ___
-
-## Validation
-
-We can apply validation for certain types of text entries. For example, we can make sure that a phone number or email address is correctly formatted.
-
-{% capture postcode %}
-1. Click `Add field`.
-2. Choose `Text box`.
-3. Type Postcode in the `Field` Label and type *postcode* in the `Variable Name`.
-4. In the `Validation` field, select *Postal code (Australia)*. This will ensure only four numerals can be entered into the field.
-5. In the `Field` note field, type *“Providing your postcode is optional. We collect approximate residency data to assist with interpreting trial results.”*
-6. Click `Save`.
-{% endcapture %}
-{% include accordion.html title1="Add a postcode (validated)" text1=postcode open=false %} 
-
-{% capture email %}
-1. Click `Add field`.
-2. Choose `Text box`.
-3. Type *Email* in the `Field` Label and type *email* in the `Variable Name`.
-4. In the `Validation` field, select *Email*. This will ensure only correctly formatted emails can be entered into the field.
-5. In the `Identifier` field, select *“Yes”*.
-6. In the `Field` note field, type *“Providing your postcode is optional. We collect approximate residency data to assist with interpreting trial results.”*
-7. Click `Save`.
-8. Click `Return to list of instruments`.
-{% endcapture %}
-{% include accordion.html title1="Add an email (validated)" text1=email open=false %} 
 
 ## About identifiers
 
