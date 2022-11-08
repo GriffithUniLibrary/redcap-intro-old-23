@@ -1,8 +1,8 @@
 ---
 nav_order: 7
-title: Branching logic
-topics: Branching; Stop actions; Action tags
-description: You can decide to show or hide specific questions based on the results of previous questions, including the results of calculated questions. Here, we are going to show a participant a warning about their BMI if it is over a certain value.
+title: Calculated fields
+topics: Calculating age; caculating BMI
+description: A calculated field can use previously submitted answers to calculate and display a value.
 ---
 
 {% include alert.html text="Branching logic cannot be tested until the survey is published." color="warning" %}
