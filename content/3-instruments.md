@@ -3,19 +3,15 @@ nav_order: 3
 title: Instruments
 ---
 
-{% capture surveys %}
+## Instruments, forms and surveys
 
 {% include alert.html text="REDCap considers anything that can capture data to be an ‘instrument’." color="info" %}
 
 There are two ways to add data to an instrument: **forms** and **surveys**. They use the same fields and record the same data into the same database. The only difference is that forms are for you, and surveys are for your participants. Provided surveys have been enabled for your project, you can turn any form into a survey.
 
-{% endcapture %}
-
-{% include card.html header="Instruments v Forms v Surveys" text=surveys %}
-
 {% include figure.html img="instruments-forms-surveys.png" alt="Instruments, forms and surveys." width="75%" %}
 
-# Designing your first instrument
+## Designing your first instrument
 
 You'll see one instrument in the list, called 'My First Instrument'.
 

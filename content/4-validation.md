@@ -27,7 +27,7 @@ We can apply validation for certain types of text entries. For example, we can m
 8. Click `Return to list of instruments`.
 {% endcapture %}
 
-{% include accordion.html title1="Activity: Add a postcode (validated)" title2="Activity: Add an email (validated)" text1=postcode text2=email open=false %}
+{% include accordion.html title1="**Activity:** Add a postcode (validated)" title2="**Activity:** Add an email (validated)" text1=postcode text2=email open=false %}
 
 You may wish to break your data gathering into several instruments. This way, you can present certain question groups only to specific cohorts, or at different times (e.g., at 0, 3 and 6 months).
 
