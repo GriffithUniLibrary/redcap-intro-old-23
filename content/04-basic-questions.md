@@ -1,6 +1,6 @@
 ---
-nav_order: 3
-title: Instruments
+nav_order: 4
+title: Basic questions
 ---
 
 ## Instruments, forms and surveys

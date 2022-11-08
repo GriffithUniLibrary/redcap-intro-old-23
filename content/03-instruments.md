@@ -3,11 +3,11 @@ nav_order: 3
 title: Instruments
 ---
 
-## Instruments, forms and surveys
+REDCap considers anything that can capture data to be an ‘instrument’. Data can be added to an instrument using either **forms** or **surveys**.
 
-{% include alert.html text="REDCap considers anything that can capture data to be an ‘instrument’." color="info" %}
+## Forms and surveys
 
-There are two ways to add data to an instrument: **forms** and **surveys**. They use the same fields and record the same data into the same database. The only difference is that forms are for you, and surveys are for your participants. Provided surveys have been enabled for your project, you can turn any form into a survey.
+One way to think about the data structure of REDCap is to think of an instrument as a collection of fields (e.g. name, age, etc), while forms and surveys are the ways in which data can be recorded into that instrument. Forms and surveys look identical in the `Designer` page. The only difference is that forms are filled out by you the researcher, while surveys are filled out by your participants. Provided surveys have been enabled for your project, you can turn any form into a survey. We will look at enabling surveys later.
 
 {% include figure.html img="instruments-forms-surveys.png" alt="Instruments, forms and surveys." width="75%" %}
 
@@ -18,8 +18,6 @@ It can be helpful to break your data collection into separate instruments. For e
 Here, we're going to create two instruments: one for *Demographic questions*, and one to collect *Baseline Health Data*.
 
 {% include alert.html text="Click on an activity title to expand it" color="info" %}
-
-> Click on an acitivty title to expand it
 
 {% capture renameinstrument %}
 
@@ -38,7 +36,7 @@ Here, we're going to create two instruments: one for *Demographic questions*, an
 
 {% include accordion.html title1="Activity: Rename your first instrument" text1=renameinstrument title2="Activity: Create a Baseline health data instrument" text2=baseline open=false %}
 
-Now we’ll add questions to the first instrument. 
+Now we’ll add questions to the first instrument.
 
 {% capture buildform %}
 
@@ -65,7 +63,7 @@ Now we’ll add questions to the first instrument.
 
 {% endcapture %}
 
-{% include accordion.html title3="Activity: Add a basic text field" title4="Activity: Add a multiple choice question" text3=buildform text4=multiplechoice open=false %}
+{% include accordion.html title3="Activity: Add a basic text field" text3=buildform title4="Activity: Add a multiple choice question" text4=multiplechoice open=false %}
 
 <!-- {% include accordion.html title1="Add a multiple choice question" text1=multiplechoice open=false %} -->
 
