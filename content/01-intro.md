@@ -48,8 +48,6 @@ This workshop is aimed at Griffith researchers and academics in the field of bio
 | Foundational data terminology such as tabular data, binary data, csv, tables, fields etc.  |
 {:.table}
 
-{% include template/credits.html %}
-
 {% capture beforewebegin %}
 
 {% capture planningalert %}

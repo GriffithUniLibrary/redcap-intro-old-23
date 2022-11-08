@@ -12,3 +12,5 @@ This site is designed as a companion to [Griffith Library's](https://www.griffit
 {% include alert.html text=workshopinfo align="left" color="info" %}
 
 {% include toc.html %}
+
+{% include template/credits.html %}
