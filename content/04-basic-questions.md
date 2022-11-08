@@ -3,38 +3,7 @@ nav_order: 4
 title: Basic questions
 ---
 
-## Instruments, forms and surveys
-
-{% include alert.html text="REDCap considers anything that can capture data to be an ‘instrument’." color="info" %}
-
-There are two ways to add data to an instrument: **forms** and **surveys**. They use the same fields and record the same data into the same database. The only difference is that forms are for you, and surveys are for your participants. Provided surveys have been enabled for your project, you can turn any form into a survey.
-
-{% include figure.html img="instruments-forms-surveys.png" alt="Instruments, forms and surveys." width="75%" %}
-
-## Choosing an instrument design
-
-It can be helpful to break your data collection into separate instruments. For example, you may only need to collect demographic data from your participants once, whereas you might wish to collect health data from them several times. Alternatively, you might want to present participants with different instruments based on their responses to demographic questions.
-
-Here, we're going to create two instruments: one for *Demographic questions*, and one to collect *Baseline Health Data*.
-
-You'll see one instrument in the list, called 'My First Instrument'.
-
-{% capture renameinstrument %}
-
-1. Click on `Choose actions` under `Instrument actions` and select `Rename`.
-2. Name the instrument *Demographic data*.
-{% endcapture %}
-
-{% capture baseline %}
-
-1. Click `Create` a new instrument from scratch.
-2. Click `Add instrument here`
-3. Name your instrument *Baseline Health Data*.
-{% endcapture %}
-
-{% include accordion.html title1="Activity: Rename your first instrument" text1=renameinstrument title2="Activity: Create a Baseline health data instrument" text2=baseline open=false %}
-
-Now we’ll add questions to the first instrument. 
+Now we’ll add demographic questions to the first instrument.
 
 {% capture buildform %}
 

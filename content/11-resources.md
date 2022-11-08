@@ -1,10 +1,10 @@
 ---
-nav_order: 9
-title: Resources and support
-topics: Summary 
+nav_order: 11
+title: Summary
+topics: Topics covered; Further learning; Support resources
 ---
 
-This workshop has focused on getting your project set up and enabling a survey instrument quickly, covering some of the most useful features of REDCap along the way. But REDCap is an extensive program and there are a number of things we just didn’t have the time to cover. 
+This workshop has focused on getting your project set up and enabling a survey instrument quickly, covering some of the most useful features of REDCap along the way. But REDCap is an extensive program! There are a number of things we just didn’t have the time to cover.
 
 ### What we’ve done and what we haven’t
 

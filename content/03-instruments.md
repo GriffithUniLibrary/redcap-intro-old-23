@@ -1,6 +1,6 @@
 ---
 nav_order: 3
-title: Instruments
+title: Data collection instruments
 ---
 
 REDCap considers anything that can capture data to be an ‘instrument’. Data can be added to an instrument using either **forms** or **surveys**.

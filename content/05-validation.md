@@ -1,5 +1,5 @@
 ---
-nav_order: 4
+nav_order: 5
 title: Validation
 ---
 
@@ -27,7 +27,7 @@ We can apply validation for certain types of text entries. For example, we can m
 8. Click `Return to list of instruments`.
 {% endcapture %}
 
-{% include accordion.html title1="**Activity:** Add a postcode (validated)" title2="**Activity:** Add an email (validated)" text1=postcode text2=email open=false %}
+{% include accordion.html title1="Activity: Add a postcode (validated)" title2="Activity: Add an email address (validated)" text1=postcode text2=email open=false %}
 
 ### Validating dates
 

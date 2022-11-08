@@ -1,5 +1,5 @@
 ---
-nav_order: 6
+nav_order: 8
 title: Branching
 topics: Survey structure; Data dictionary; 
 description: REDCap can export and import the data structure for your project into a CSV-formatted file called a data dictionary.

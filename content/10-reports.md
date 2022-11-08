@@ -1,5 +1,5 @@
 ---
-nav_order: 8
+nav_order: 10
 title: Reports and data export
 topics: Exports; Reports 
 description: REDCap provides several built-in reports and allows you to make your own. It also allows you to export your data to most major statistical packages.

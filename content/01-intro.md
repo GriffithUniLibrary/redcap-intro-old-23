@@ -1,15 +1,54 @@
 ---
 nav_order: 1
 title: Introduction
+topics: Workshop info; Prerequisites; Survey design
 ---
 
 {% capture basics %}
-**Note:** The aim of this workshop is to get you up and running with REDCap quickly. We aim to cover the fundamentals well enough that you can start to use the service.
-
-For this reason we've left out advanced topics like scheduled invitations, randomisation and longitudinal study design.
+**Note:** The aim of this workshop is to get you up and running with REDCap quickly. We aim to cover the fundamentals so you can start to use the service. We've left out advanced topics like scheduled invitations, randomisation and longitudinal study design.
 {% endcapture %}
 
 {% include alert.html text=basics align="left" color="warning" %}
+
+## Topic and aims
+
+Introduction to REDCap (REsearch Data Capture) at Griffith
+
+## Audience
+
+This workshop is aimed at Griffith researchers and academics in the field of biostatistics, or anyone seeking to get up and running with the REDCap data collection tool.
+
+## Learning objectives
+
+| Once you have completed this workshop you should be able to: |
+| -----|
+| Log in to the Griffith REDCap instance |
+| Create a new project |
+| Create a data collection instrument |
+| Create basic questions and apply validation |
+| Control question visibility using branching logic |
+| Publish and distribute your project |
+| Locate REDCap support resources |
+{:.table}
+
+## Prerequisites
+
+### Required software
+
+| You will need the following software to successfully complete this workshop: |
+| -----|
+| A modern browser  |
+| Access to the Griffith REDCap server |
+{:.table}
+
+### Assumed knowledge
+
+| It is assumed that you have the following level of understanding: |
+| -----|
+| Foundational data terminology such as tabular data, binary data, csv, tables, fields etc.  |
+{:.table}
+
+{% include template/credits.html %}
 
 {% capture beforewebegin %}
 
