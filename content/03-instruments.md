@@ -36,37 +36,6 @@ Here, we're going to create two instruments: one for *Demographic questions*, an
 
 {% include accordion.html title1="Activity: Rename your first instrument" text1=renameinstrument title2="Activity: Create a Baseline health data instrument" text2=baseline open=false %}
 
-Now we’ll add questions to the first instrument.
-
-{% capture buildform %}
-
-1. Click on `My First Instrument`
-2. Click `Add Field`
-3. Choose `Text Box`
-4. In the `Field` Label, type *Family Name* (this gets displayed to your participants)
-5. In the `Field` Name, type *name_family* (this gets stored as a column header in your database)
-6. In the `Required` field, select “Yes”.
-7. In the `Identifier?` Field, select “Yes”. (Identifiable information can be flagged to restrict it from export.)
-8. Click `Save`.
-9. Repeat the process to add the field Given Name (name_given)
-{% endcapture %}
-
-{% capture multiplechoice %}
-
-1. Click `Add field`.
-2. Choose `Multiple choice - Radio buttons` from the drop-down list.
-3. Type *Gender* in the `Field` Label and *gender* in the `Variable Name`.
-4. Add the following options: *Male, Female, Intersex, Unspecified*.
-5. When you leave the field, REDCap automatically enters numerical raw values for each option.
-
-{% include alert.html text="Note here that the ‘raw value’, which appears before the column, is the value that gets recorded to your data. Thus your recorded value can be numeric, or a single letter code, while the participant can read a fuller description." color="info" %}
-
-{% endcapture %}
-
-{% include accordion.html title3="Activity: Add a basic text field" text3=buildform title4="Activity: Add a multiple choice question" text4=multiplechoice open=false %}
-
-<!-- {% include accordion.html title1="Add a multiple choice question" text1=multiplechoice open=false %} -->
-
 ___
 
 ## About identifiers

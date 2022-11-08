@@ -5,6 +5,10 @@ title: Basic questions
 
 Now we’ll add demographic questions to the first instrument.
 
+## Basic text fields
+
+In REDCap, the `text` question type can be used in several ways: to capture short and long written responses, but also to capture information like numbers and dates. Here we will just capture our participant's name.
+
 {% capture buildform %}
 
 1. Click on `My First Instrument`
@@ -18,21 +22,41 @@ Now we’ll add demographic questions to the first instrument.
 9. Repeat the process to add the field Given Name (name_given)
 {% endcapture %}
 
-{% capture multiplechoice %}
+{% include accordion.html title1="Activity: Add a basic text field" text1=buildform open=false %}
+
+## Multiple choice fields
+
+Multiple choice fields are of two kinds. Radio buttons and drop down lists only allow the participant to select a single option from a list. Checkboxes allow participants to select any number of items from a list.
+
+{% capture radiobuttons %}
 
 1. Click `Add field`.
 2. Choose `Multiple choice - Radio buttons` from the drop-down list.
 3. Type *Gender* in the `Field` Label and *gender* in the `Variable Name`.
 4. Add the following options: *Male, Female, Intersex, Unspecified*.
-5. When you leave the field, REDCap automatically enters numerical raw values for each option.
 
 {% include alert.html text="Note here that the ‘raw value’, which appears before the column, is the value that gets recorded to your data. Thus your recorded value can be numeric, or a single letter code, while the participant can read a fuller description." color="info" %}
 
 {% endcapture %}
 
-{% include accordion.html title1="Activity: Add a basic text field" title2="Activity: Add a multiple choice question" text1=buildform text2=multiplechoice open=false %}
+{% capture checkboxes %}
+3. Click `Add field`.
+4. Choose *Checkboxes (Multiple Answers)* for the `Field Type`.
+5. In the `Field Label`, type *Do you suffer from any of the following conditions?*.
+6. In the `Variable Name`, type **pre_conditions**.
+7. In the `Choices Field`, type the following on separate lines:
 
-<!-- {% include accordion.html title1="Add a multiple choice question" text1=multiplechoice open=false %} -->
+- *Diabetes*
+- *Cardiovascular disease*
+- *Asthma*
+- *Anxiety or depression*
+
+8. In the `Required` field, click *Yes*.
+
+{% include alert.html text="REDCap automatically adds numeric Raw Values for each choice. Raw values are what gets saved to the database when a participant chooses a value. You can change the raw values to something else if you want." color="info" %}
+{% endcapture %}
+
+{% include accordion.html title2="Activity: Add a radio button question" title3="Activity: Add a checkbox question" text2=radiobuttons text3=checkboxes open=false %}
 
 ___
 
