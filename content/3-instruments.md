@@ -11,31 +11,46 @@ There are two ways to add data to an instrument: **forms** and **surveys**. They
 
 {% include figure.html img="instruments-forms-surveys.png" alt="Instruments, forms and surveys." width="75%" %}
 
-## Designing your first instrument
+## Choosing an instrument design
+
+It can be helpful to break your data collection into separate instruments. For example, you may only need to collect demographic data from your participants once, whereas you might wish to collect health data from them several times. Alternatively, you might want to present participants with different instruments based on their responses to demographic questions.
+
+Here, we're going to create two instruments: one for *Demographic questions*, and one to collect *Baseline Health Data*.
 
 You'll see one instrument in the list, called 'My First Instrument'.
 
-{% capture text %}
+{% capture renameinstrument %}
+
 1. Click on `Choose actions` under `Instrument actions` and select `Rename`.
 2. Name the instrument *Demographic data*.
 {% endcapture %}
-{% include card.html header="Rename your first instrument" text=text %}
 
-Now We’ll build a form and then turn it into a survey.
+{% capture baseline %}
+
+1. Click `Create` a new instrument from scratch.
+2. Click `Add instrument here`
+3. Name your instrument *Baseline Health Data*.
+{% endcapture %}
+
+{% include accordion.html title1="Activity: Rename your first instrument" text1=renameinstrument title2="Activity: Create a Baseline health data instrument" text2=baseline open=false %}
+
+Now we’ll add questions to the first instrument. 
 
 {% capture buildform %}
+
 1. Click on `My First Instrument`
 2. Click `Add Field`
 3. Choose `Text Box`
 4. In the `Field` Label, type *Family Name* (this gets displayed to your participants)
 5. In the `Field` Name, type *name_family* (this gets stored as a column header in your database)
 6. In the `Required` field, select “Yes”.
-7. In the `Identifier?` Field, select “Yes”. (Identifiable information can be flagged so as to remove it from exports.)
+7. In the `Identifier?` Field, select “Yes”. (Identifiable information can be flagged to restrict it from export.)
 8. Click `Save`.
 9. Repeat the process to add the field Given Name (name_given)
 {% endcapture %}
 
 {% capture multiplechoice %}
+
 1. Click `Add field`.
 2. Choose `Multiple choice - Radio buttons` from the drop-down list.
 3. Type *Gender* in the `Field` Label and *gender* in the `Variable Name`.

@@ -29,16 +29,6 @@ We can apply validation for certain types of text entries. For example, we can m
 
 {% include accordion.html title1="**Activity:** Add a postcode (validated)" title2="**Activity:** Add an email (validated)" text1=postcode text2=email open=false %}
 
-You may wish to break your data gathering into several instruments. This way, you can present certain question groups only to specific cohorts, or at different times (e.g., at 0, 3 and 6 months).
-
-{% capture baseline %}
-
-1. Click `Create` a new instrument from scratch.
-2. Click `Add instrument here`
-3. Name your instrument *Baseline Health Data*.
-{% endcapture %}
-{% include card.html header="Create a Baseline health data instrument" text=baseline %}
-
 ### Validating dates
 
 {% capture baseline %}
@@ -55,7 +45,7 @@ You may wish to break your data gathering into several instruments. This way, yo
 
 {% capture heightweight %}
 
-1. Create two new text box fields:  for Height (cm) (Variable Name: __height_cm__) and Weight (Kg) (Variable Name: __weight_kg__) using the instructions above.
+1. Create two new text box fields:  for Height (cm) (Variable Name: **height_cm**) and Weight (Kg) (Variable Name: **weight_kg**) using the instructions above.
 2. For each one, set the `Validation` to *Integer*. This will ensure only numbers can be entered into the field.
 {% endcapture %}
 {% include card.html header="Add height and weight fields" text=heightweight %}
@@ -66,7 +56,7 @@ You may wish to break your data gathering into several instruments. This way, yo
 3. Click `Add field`.
 4. Choose *Checkboxes (Multiple Answers)* for the `Field Type`.
 5. In the `Field Label`, type *Do you suffer from any of the following conditions?*.
-6. In the `Variable Name`, type __pre_conditions__.
+6. In the `Variable Name`, type **pre_conditions**.
 7. In the `Choices Field`, type the following on separate lines:
 
 - *Diabetes*
@@ -91,7 +81,7 @@ You can use calculated fields to determine values based on the values of previou
 1. Click `Add field`.
 2. Choose *Calculated Field* for the `Field Type`.
 3. In the `Field Label`, type Y_our age at the start of this project_.
-4. In the `Variable Name`, type __age_at_start__.
+4. In the `Variable Name`, type **age_at_start**.
 5. In the `Calculation Equation`, type: `datediff([dob],"2020-01-01","y")`
 
 {% include alert.html text="REDCap understands terms like ‘now’ and ‘today’, but they are not recommended for calculating age because they will lead to variation in values over time. This is why we select a set date such as January 1 or the project start date." color="info" %}
