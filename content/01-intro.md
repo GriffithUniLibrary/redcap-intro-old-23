@@ -15,7 +15,7 @@ For this reason we've left out advanced topics like scheduled invitations, rando
 
 {% capture planningalert %}
 
-A significant amount of careful planning and design needs to happen before you start building your survey. The stronger your preparation, the more credible your methodology will be. 
+A significant amount of careful planning and design needs to happen before you start building your survey. The stronger your preparation, the more credible your methodology will be.
 
 {% endcapture %}
 {% include alert.html text=planningalert color="warning" %}
@@ -27,7 +27,7 @@ Your **preparation** phase should have included:
 - Concept mapping and identification of measures
 - Survey cohort identification
 
-Your **design** phase should have included: 
+Your **design** phase should have included:
 
 - Clarifying the _answers_ you want (not the questions)
 - Question design
