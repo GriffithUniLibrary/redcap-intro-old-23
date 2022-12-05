@@ -23,7 +23,7 @@ Your REDCap account is connected to the Griffith phonebook. Your Griffith s-numb
 
 {% endcapture %}
 
-{% include accordion.html title1="Activity: Log in to REDCap (click to expand)" text1=loginactivity open=true %} 
+{% include accordion.html title1="Activity: Log in to REDCap" text1=loginactivity open=true %} 
 
 ## The My Projects Screen
 

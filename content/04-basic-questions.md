@@ -22,7 +22,7 @@ In REDCap, the `text` question type can be used in several ways: to capture shor
 9. Repeat the process to add the field Given Name (name_given)
 {% endcapture %}
 
-{% include accordion.html title1="Activity: Add a basic text field" text1=buildform open=false %}
+{% include accordion.html title1="Activity: Add a basic text field" text1=buildform open=true %}
 
 ## Multiple choice fields
 
@@ -56,14 +56,16 @@ Multiple choice fields are of two kinds. Radio buttons and drop down lists only 
 {% include alert.html text="REDCap automatically adds numeric Raw Values for each choice. Raw values are what gets saved to the database when a participant chooses a value. You can change the raw values to something else if you want." color="info" %}
 {% endcapture %}
 
-{% include accordion.html title2="Activity: Add a radio button question" title3="Activity: Add a checkbox question" text2=radiobuttons text3=checkboxes open=false %}
+{% include accordion.html title1="Activity: Add a radio button question" title2="Activity: Add a checkbox question" text1=radiobuttons text2=checkboxes open=true %}
 
 ___
 
-## About identifiers
-
-REDCap allows for personally identifiable information to be automatically removed from reports and exported data. Any field can be marked as an identifier.
+{% capture identifiers %}
+REDCap allows you to automatically remove personally identifiable information from reports and exported data. Any field can be marked as an identifier.
 
 REDCap uses the US HIPAA model to list what are likely to be personally identifying data. You can look it up using the REDCap help. It is a starting point and it likely to be similar to the Australian model.
 
 {% include alert.html text="If you are collecting personal information from participants you should refer to the Privacy Principles found in the *Privacy Act 1988* (Cth) and Griffith’s Privacy Plan (see [https://www.griffith.edu.au/about-griffith/corporate-governance/plans-publications/griffith-university-privacy-plan#research](https://www.griffith.edu.au/about-griffith/corporate-governance/plans-publications/griffith-university-privacy-plan#research))." color="warning" %}
+
+{% endcapture %}
+{% include card.html header="Dealing with identifiable information" text=identifiers %}

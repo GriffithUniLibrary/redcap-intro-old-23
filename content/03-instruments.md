@@ -34,7 +34,7 @@ Here, we're going to create two instruments: one for *Demographic questions*, an
 3. Name your instrument *Baseline Health Data*.
 {% endcapture %}
 
-{% include accordion.html title1="Activity: Rename your first instrument" text1=renameinstrument title2="Activity: Create a Baseline health data instrument" text2=baseline open=false %}
+{% include accordion.html title1="Activity: Rename your first instrument" text1=renameinstrument title2="Activity: Create a Baseline health data instrument" text2=baseline open=true %}
 
 ___
 
