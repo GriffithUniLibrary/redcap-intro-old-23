@@ -1,5 +1,4 @@
 ---
-nav_order: 10
 title: Reference & Resources
 ---
 
