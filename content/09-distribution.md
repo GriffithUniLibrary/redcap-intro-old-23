@@ -114,6 +114,12 @@ It is not strictly necessary to click all of the “I’m done” boxes to move 
 {% endcapture %}
 {% include card.html header="Entering live data" text=livedata %}
 
-___
+----
 
-{% include alert.html text="**All done here?** Move to the [next page](7-reports.html)." color="success" %}
+## About identifiers
+
+REDCap allows for personally identifiable information to be automatically removed from reports and exported data. Any field can be marked as an identifier.
+
+REDCap uses the US HIPAA model to list what are likely to be personally identifying data. You can look it up using the REDCap help. It is a starting point and it likely to be similar to the Australian model.
+
+{% include alert.html text="If you are collecting personal information from participants you should refer to the Privacy Principles found in the *Privacy Act 1988* (Cth) and Griffith’s Privacy Plan (see [https://www.griffith.edu.au/about-griffith/corporate-governance/plans-publications/griffith-university-privacy-plan#research](https://www.griffith.edu.au/about-griffith/corporate-governance/plans-publications/griffith-university-privacy-plan#research))." color="warning" %}

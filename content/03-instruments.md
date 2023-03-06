@@ -11,11 +11,18 @@ When you click `New Project` in the top menu, you'll be presented with the` New 
 
 {% include figure.html img="new-project.png" caption="The New Projects screen" alt="Screenshot showing the New Project screen" width="100%" %}
 
-## First, some terminology
+You can start with an empty project, or use a template provided by REDCap. Templates can be a useful way of getting started with a basic project structure, if you know the type of project you need. We are going to start with an empty project.
 
-Before you start building a project, it will be helpful to understand the terms that REDCap uses. The first and most important distinction is between `instruments`, `forms` and `surveys`.
+## Before we proceed: some terminology
+
+Before you start building your project, it will be helpful to understand the terms that REDCap uses. The first and most important distinction is between `instruments`, `forms` and `surveys`.
+
+{% capture instrumentinfo %}
 
 REDCap considers anything that can capture data to be an `instrument`. Data can then be added to an instrument using either `forms` or `surveys`.
+
+{% endcapture %}
+{% include alert.html text=instrumentinfo color="info" %}
 
 {% include figure.html img="instruments-forms-surveys.png" alt="Instruments, forms and surveys." width="75%" %}
 
@@ -59,13 +66,3 @@ Here, we're going to create two instruments: one for *Demographic questions*, an
 {% endcapture %}
 
 {% include accordion.html title1="Activity: Rename your first instrument" text1=renameinstrument title2="Activity: Create a Baseline health data instrument" text2=baseline open=true %}
-
-___
-
-## About identifiers
-
-REDCap allows for personally identifiable information to be automatically removed from reports and exported data. Any field can be marked as an identifier.
-
-REDCap uses the US HIPAA model to list what are likely to be personally identifying data. You can look it up using the REDCap help. It is a starting point and it likely to be similar to the Australian model.
-
-{% include alert.html text="If you are collecting personal information from participants you should refer to the Privacy Principles found in the *Privacy Act 1988* (Cth) and Griffith’s Privacy Plan (see [https://www.griffith.edu.au/about-griffith/corporate-governance/plans-publications/griffith-university-privacy-plan#research](https://www.griffith.edu.au/about-griffith/corporate-governance/plans-publications/griffith-university-privacy-plan#research))." color="warning" %}
