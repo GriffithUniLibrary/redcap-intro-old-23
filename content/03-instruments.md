@@ -1,15 +1,35 @@
 ---
 nav_order: 3
-title: Data collection instruments
+title: Creating a project
 ---
 
-REDCap considers anything that can capture data to be an ‘instrument’. Data can be added to an instrument using either **forms** or **surveys**.
+## The New Project screen
 
-## Forms and surveys
+{% include figure.html img="new-project.png" caption="The New Projects screen" alt="Screenshot showing the New Project screen" width="100%" %}
 
-One way to think about the data structure of REDCap is to think of an instrument as a collection of fields (e.g. name, age, etc), while forms and surveys are the ways in which data can be recorded into that instrument. Forms and surveys look identical in the `Designer` page. The only difference is that forms are filled out by you the researcher, while surveys are filled out by your participants. Provided surveys have been enabled for your project, you can turn any form into a survey. We will look at enabling surveys later.
+## First, some terminology
+
+Before you start building a project, it will be helpful to understand the terms that REDCap uses. The first and most important distinction is between `instruments`, `forms` and `surveys`.
+
+REDCap considers anything that can capture data to be an `instrument`. Data can then be added to an instrument using either `forms` or `surveys`.
 
 {% include figure.html img="instruments-forms-surveys.png" alt="Instruments, forms and surveys." width="75%" %}
+
+### Instruments
+
+Think of an instrument as a collection of `fields` (e.g. name, age, etc). You can have any number of instruments in your project. For example, you might want to create one instrument for collecting participants' demographic information, and another instrument for collecting participants' current health indicators (it will become clear later why you might want to separate them).
+
+### Forms
+
+Whenever an instrument is created, a form is made available for the researcher to enter data into. 
+
+Forms and surveys look identical in the `Designer` page. The only difference is that forms are filled out by you the researcher, while surveys are filled out by your participants. Provided surveys have been enabled for your project, you can turn any form into a survey. 
+
+### Surveys
+
+If you want to capture data for your project by asking participants to fill out surveys, you need to enable surveys in your project. If you forget to do this, you won't be able to make your data collection instruments visible to the public (see the section on [distribution](09-distribution.md)). In the 
+
+{% include figure.html img="enable-surveys.png" caption="Don't forget to enable surveys if you plan on using them" alt="Screenshot showing the enable survey button" width="100%" %}
 
 ## Choosing an instrument design
 
