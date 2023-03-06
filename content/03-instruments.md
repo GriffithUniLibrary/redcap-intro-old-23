@@ -1,9 +1,13 @@
 ---
 nav_order: 3
+topics: Projects; instruments; forms; surveys
 title: Creating a project
+description: Before you can create forms and surveys in REDCap, you need to create a project. 
 ---
 
 ## The New Project screen
+
+When you click `New Project` in the top menu, you'll be presented with the` New Project` screen. You can give your project any title that makes sense to you — your project name won't be visible to external participants. You can choose the `purpose` of your project here. Setting a purpose has no effect on the operation of the project. If you set it to 'Research', you have the option of adding some information about the type of study you are doing. We will just set the `purpose` to 'Practice / Just for fun'.
 
 {% include figure.html img="new-project.png" caption="The New Projects screen" alt="Screenshot showing the New Project screen" width="100%" %}
 
