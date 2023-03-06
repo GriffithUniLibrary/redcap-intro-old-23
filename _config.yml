@@ -27,9 +27,9 @@ featured-image: "/images/university-drive.jpg"
 # author name, displayed in credits
 author: Griffith University Library
 # year or date published, displayed in sidebar
-publication_year: 2022
+publication_year: 2023
 # location of code, the full url to your github repository
-source-code: https://github.com/learn-static/lesson-template
+source-code: https://github.com/GriffithUniLibrary/redcap-intro
 # content license (typically "cc by-sa"), displayed in sidebar
 content_license: "CC BY-SA"
 # URL to the content license
