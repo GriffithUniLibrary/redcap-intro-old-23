@@ -28,12 +28,13 @@ featured-image: "/images/university-drive.jpg"
 author: Griffith University Library
 # year or date published, displayed in sidebar
 publication_year: 2023
+pub_year: 2023
 # location of code, the full url to your github repository
 source-code: https://github.com/GriffithUniLibrary/redcap-intro
 # content license (typically "cc by-sa"), displayed in sidebar
-content_license: "CC BY-SA"
+content_license: "CC BY-NC"
 # URL to the content license
-content_license_link: https://creativecommons.org/licenses/by-sa/4.0/
+content_license_link: https://creativecommons.org/licenses/by-nc/4.0/
 
 ##########
 # THEME CUSTOMIZATION [optional!]
